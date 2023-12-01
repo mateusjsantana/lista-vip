@@ -1,111 +1,70 @@
-**Documentação do Projeto Lista VIP**
+# Getting Started with Create React App
 
-## Tecnologias Utilizadas:
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-### Frontend:
+## Available Scripts
 
-- **React:** Uma biblioteca JavaScript para criar interfaces de usuário.
-- **Material-UI:** Uma biblioteca de componentes React que implementa o Material Design.
-- **react-hook-form:** Uma biblioteca para gerenciar formulários no React.
-- **axios:** Uma biblioteca para fazer requisições HTTP.
+In the project directory, you can run:
 
-### Backend:
+### `npm start`
 
-- **Node.js:** Ambiente de execução JavaScript server-side.
-- **Express:** Framework web para Node.js.
-- **cors:** Middleware para habilitar o controle de acesso HTTP (CORS).
-- **mysql2:** Cliente MySQL para Node.js.
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Banco de Dados:
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-- **MySQL:** Sistema de gerenciamento de banco de dados relacional.
+### `npm test`
 
-### Outros:
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- **Git:** Sistema de controle de versão distribuído.
-- **npm:** Gerenciador de pacotes para Node.js.
+### `npm run build`
 
-## Estrutura do Projeto:
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-```
-lista-vip/
-│
-├── app-front/                  # Aplicação Frontend
-│   ├── public/
-│   ├── src/
-│   │   ├── components/
-│   │   │   ├── pages/         # Páginas da aplicação
-│   │   │   │   ├── Form.js    # Componente de formulário
-│   │   │   │   └── ...
-│   │   │   ├── layouts/       # Layouts compartilhados
-│   │   │   ├── styles/        # Estilos globais
-│   │   │   └── ...
-│   │   ├── services/           # Serviços, como requisições HTTP
-│   │   └── ...
-│   └── ...
-│
-└── app-front/src/components/backend/  # Backend da aplicação
-    ├── node_modules/
-    ├── package.json
-    ├── server.js               # Configuração do servidor Express
-    └── ...
-```
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-## Configuração do Banco de Dados:
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- Abra `app-front/src/components/backend/server.js`.
-- Modifique as configurações do banco de dados (`host`, `user`, `password`, `database`) conforme necessário.
+### `npm run eject`
 
-## Instruções para Execução:
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-1. **Clonagem do Repositório:**
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-   ```bash
-   git clone https://github.com/seu-usuario/lista-vip.git
-   ```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-2. **Instalação das Dependências no Frontend:**
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-   ```bash
-   cd lista-vip/app-front
-   npm install
-   ```
+## Learn More
 
-3. **Instalação das Dependências no Backend:**
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-   ```bash
-   cd lista-vip/app-front/src/components/backend
-   npm install
-   ```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-4. **Configuração do Banco de Dados:**
+### Code Splitting
 
-   - Abra o arquivo `server.js` em `lista-vip/app-front/src/components/backend`.
-   - Modifique as configurações do banco de dados (`host`, `user`, `password`, `database`) conforme necessário.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-5. **Execução do Backend:**
+### Analyzing the Bundle Size
 
-   ```bash
-   node server.js
-   ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-6. **Execução do Frontend:**
+### Making a Progressive Web App
 
-   ```bash
-   cd lista-vip/app-front
-   npm start
-   ```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-7. **Acesso ao Aplicativo:**
+### Advanced Configuration
 
-   - Abra o navegador e vá para [http://localhost:3000](http://localhost:3000).
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-8. **Interaja com o Aplicativo:**
-   - Navegue, preencha o formulário e verifique a interação com o MySQL.
+### Deployment
 
-## Observações:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-- Certifique-se de ter as permissões corretas no MySQL para criar e modificar bancos de dados.
-- Pode ser necessário instalar o MySQL Workbench ou outra ferramenta para visualização do banco de dados, se desejar verificar diretamente no banco.
+### `npm run build` fails to minify
 
-Este guia assume que o ambiente está configurado de forma semelhante ao seu ambiente original. Se houver alguma diferença, ajuste conforme necessário.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

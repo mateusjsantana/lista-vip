@@ -5,8 +5,12 @@ import CelebrationIcon from '@mui/icons-material/Celebration';
 
 function Home() {
   const festas = [
-    { nome: 'Festa 1', local: 'Local 1', horario: 'Horário 1' },
-    { nome: 'Festa 2', local: 'Local 2', horario: 'Horário 2' },
+    { nome: 'Tardezinha Cloud', local: 'Av. Deus', horario: '15:00', data: '01/01/2024' },
+    { nome: 'Noite dos Horrores', local: 'Av. Deus', horario: '22:00', data: '05/01/2024' },
+    { nome: 'Festa do Pijama', local: 'Club Cloud, Avenida Imoral 2002', horario: '20:00', data: '10/01/2024' },
+    { nome: 'Noite das Patras', local: 'Club Cloud, Avenida Imoral 2002', horario: '22:00', data: '15/01/2024' },
+    { nome: 'Carna Cloud', local: 'Club Cloud, Avenida Imoral 2002', horario: '15:00', data: '20/02/2024' },
+
   ];
 
   return (
@@ -36,6 +40,9 @@ function Home() {
             </Typography>
             <Typography color="text.secondary">
               Horário: {festa.horario}
+            </Typography>
+            <Typography color="text.secondary">
+              Data: {festa.data}
             </Typography>
           </CardContent>
           <CardActions>
